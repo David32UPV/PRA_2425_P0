@@ -18,7 +18,7 @@ class BrazoRobotico{
 		double getx();
 		double gety();
 		double getz();
-		bool getsujetandoObjeto();
+		bool getSujetandoObjeto();
 
 		// Métodos de la clase
 		void coger();
