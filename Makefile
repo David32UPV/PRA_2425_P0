@@ -10,7 +10,8 @@ main: main.o BrazoRobotico.o
 	g++ -o main main.o BrazoRobotico.o
 
 
-clean: rm -f *.o main
+clean:
+	rm -f *.o main
 
 test: all
 	./main
