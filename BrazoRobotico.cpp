@@ -1,11 +1,12 @@
 #include "BrazoRobotico.h"
+#include <iostream>
 
 // Constructor rellenado
-BrazoRobotico::BrazoRobotico(){
-	x = 0;
-	y = 0;
-	z = 0;
-	sujetandoObjeto = false;
+BrazoRobotico::BrazoRobotico(double x, double y, double z, bool sujetandoObjeto){
+	this->x = x;
+	this->y = y;
+	this->z = z;
+	this->sujetandoObjeto = sujetandoObjeto;
 }
 
 // Getters rellenados (consultores)
@@ -26,17 +27,18 @@ bool BrazoRobotico::getSujetandoObjeto(){
 }
 
 // Métodos de la clase rellenados
-void BrazoRobotico::coger(){
-	sujetandoObjeto = true;
+bool BrazoRobotico::coger(){
+	return sujetandoObjeto = true;
 }
 
-void BrazoRobotico::soltar(){
-	sujetandoObjeto = false;
+bool BrazoRobotico::soltar(){
+	return sujetandoObjeto = false;
 }
 
 void BrazoRobotico::mover(double x, double y, double z){
 	this->x = x;
-	this-y = y;
+	this->y = y;
 	this->z = z;
+	std::cout << "Me he movido a las coordenadas: " << this->x << ", " << this->y << ", " << this->z << std::endl;
 }
 

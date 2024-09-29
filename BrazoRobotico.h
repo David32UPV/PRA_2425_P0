@@ -1,5 +1,3 @@
-#include <iostream>
-using namespace std;
 
 class BrazoRobotico{
 
@@ -12,7 +10,7 @@ class BrazoRobotico{
 	public:
 		
 		// Constuctor
-		BrazoRobotico();
+		BrazoRobotico(double x, double y, double z, bool sujetandoObjeto);
 				
 		// Consultores(getters) para los 4 atributos privados (i.e. 4 consultores)
 		double getx();
@@ -21,8 +19,8 @@ class BrazoRobotico{
 		bool getSujetandoObjeto();
 
 		// Métodos de la clase
-		void coger();
-		void soltar();
+		bool coger();
+		bool soltar();
 		void mover(double x, double y, double z);
 
 };
