@@ -35,8 +35,8 @@ void BrazoRobotico::soltar(){
 }
 
 void BrazoRobotico::mover(double x, double y, double z){
-	x = 2;
-	y = 2;
-	z = 2;
+	this->x = x;
+	this-y = y;
+	this->z = z;
 }
 
